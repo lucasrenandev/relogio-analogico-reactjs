@@ -1,0 +1,106 @@
+.container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border: 3px solid #00eeff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align-last: center;
+  box-shadow: 0 0 15px #00eeff;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.hours, .minutes, .seconds {
+  position: absolute;
+  bottom: 50%;
+  background-color: #222;
+  border: 2px solid #00eeff;  
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+.hours {
+  width: 11px;
+  height: 35%;
+  z-index: 1;
+}
+
+.minutes {
+  width: 11px;
+  height: 40%;
+  z-index: 2; 
+}
+
+.seconds {
+  width: 8px;
+  height: 45%;
+  background-color: #ff0000;
+  z-index: 3;
+}
+
+.container span {
+  color: #00eeff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.number1 {
+  transform: rotate(30deg);
+}
+.number2 {
+  transform: rotate(60deg);
+}
+.number3 {
+  transform: rotate(90deg);
+}
+.number4 {
+  transform: rotate(120deg);
+}
+.number5 {
+  transform: rotate(150deg);
+}
+.number6 {
+  transform: rotate(180deg);
+}
+.number7 {
+  transform: rotate(210deg);
+}
+.number8 {
+  transform: rotate(240deg);
+}
+.number9 {
+  transform: rotate(270deg);
+}
+.number10 {
+  transform: rotate(300deg);
+}
+.number11 {
+  transform: rotate(330deg);
+}
+.number12 {
+  transform: rotate(0);
+}
+
+.mark {
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.30px;
+}
